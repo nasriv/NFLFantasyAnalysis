@@ -13,7 +13,7 @@ The formal steps I took to building this data pipeline is listed below:
 
 
 ## ToDo List ##
-[x] Compile QB passing database
-[x] Compile RB Rushing Database
-  [] Sort by player and fill in position where missing information exists
-  [] Root out players who aren't RBs
+- [x] Compile QB passing database
+- [] Compile RB Rushing Database
+  - [] Sort by player and fill in position where missing information exists
+  - [] Root out players who aren't RBs
