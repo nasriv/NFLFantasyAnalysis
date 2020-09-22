@@ -23,5 +23,14 @@ The formal steps I took to building this data pipeline is listed below:
 
 ### How has NFL QB fantasy value changed over time? ###
 
+The standard fantasy scoring system for QBs are as follows:
 
+#### QB Fantasy Scoring System ####
+1pt for every 25 passing yards
+4pts for every passing TD
+-2pts for every INT thrown
+6pts for every running TD
+1pt for every 10 rushing yards
+
+Using the scoring rubric above 
 ![QB](https://github.com/nasriv/NFLFantasyAnalysis/blob/master/images/QBpoints.jpg "QB Fantasy Points")
