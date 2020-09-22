@@ -23,14 +23,15 @@ The formal steps I took to building this data pipeline is listed below:
 
 ### How has NFL QB fantasy value changed over time? ###
 Several QB's have entered and left the league without throwing a single pass, or only playing a select few number of games. This study will attempt to focus on NFL starting QBs who are defined as the first team player on the depth chart and plays more than any other QB on the teams roster. The NFL league has slowly shifted towards passing more and running less. This is evident when plotting the average number of pass attempts per game by a QB over the past 20 years (shown below).
-<img src="https://github.com/nasriv/NFLFantasyAnalysis/blob/master/images/PassAttempt.jpg" align="center">
+
+<img src="https://github.com/nasriv/NFLFantasyAnalysis/blob/master/images/PassAttempt.jpg">
 
 The more pass attempts there are, the more yards there should be, so again as expected there will be a high correlation between passing yards and attempts, again shown below.
-<img src="https://github.com/nasriv/NFLFantasyAnalysis/blob/master/images/AttvYds.jpg" align="center">
+<img src="https://github.com/nasriv/NFLFantasyAnalysis/blob/master/images/AttvYds.jpg">
 
 Now taking our dataset and applying the traditional fantasy scoring system for QBs, we can generate a distribution of points a QB should be expected to score and thus help guide an NFL fantasy player. 
 
-<img src="https://github.com/nasriv/NFLFantasyAnalysis/blob/master/images/QBpoints.jpg" align="center">
+<img src="https://github.com/nasriv/NFLFantasyAnalysis/blob/master/images/QBpoints.jpg">
 
 The standard fantasy scoring system for QBs is as follows:
 * 1pt for every 25 passing yards
