@@ -17,7 +17,9 @@ The formal steps I took to building this data pipeline is listed below:
 - [x] Compile QB passing database
 - [ ] Compile RB Rushing Database
   - [ ] Sort by player and fill in position where missing information exists
-  - [ ] Root out players who aren't RBs
+  - [ ] Filter out players who aren't RBs.
+- [ ] Compile WR Database
+- [ ] Establish SQL data schema to load master CSV files into for future querying and data storage methods
 
 ## Analytics ##
 
