@@ -9,7 +9,9 @@ The formal steps I took to building this data pipeline is listed below:
 1. Define html websites which have structured/semi-structured data
 2. Build Python functions to loop through html websites based on a user defined range of playing years/seasons
 3. Develop a "storage" function to lay the groundwork on how to compile the information in a csv format which is easy enough to later on build into a master database (SQL, etc).
-4. Run data analytic studies to answer all my burning questions
+4. Clean and tranform data as needed
+5. Run data analytic studies to answer all my burning questions
+
 
 
 ## ToDo List ##
