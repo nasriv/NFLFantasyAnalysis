@@ -61,14 +61,36 @@ passdf['ftyPts'] = ( passdf['Yds'] / 25 + passdf['TD'] * 4 + passdf['Int'] * -2 
 sns.set_theme(style="darkgrid")
 pal = sns.cubehelix_palette(10,rot=-0.25, light=0.7) #color palette
 
-# Set up the matplotlib figure
-g=sns.FacetGrid(passdf, col='year',col_wrap=5,height=1.75)
-g.map(sns.histplot,'Y/G',bins=10)
-for ax in g.axes.flat:
-    ax.axvline(x=200,alpha=0.5,ls='--',c='r')
+print(passdf.columns)
 
-g.set_axis_labels('Avg. Yds/Game','Count')
+# Plot pass attempts over time
+passdf['attgm'] = passdf['Att'] / passdf['G']
+
+g = sns.regplot(passdf['year'],passdf['attgm'], marker="+")
+g.set_xlim(1999,2020)
+plt.xlabel('Year')
+plt.ylabel('Pass Attempts per Game')
+plt.title('QB pass attempts over time')
+plt.savefig('images/PassAttempt.jpg')
+plt.close()
+
+# Plot pass attempts with total yards over time
+g = sns.scatterplot(x="Att",y='Yds',data=passdf)
+plt.xlabel('Total Passing Attempts in a season')
+plt.ylabel('Total Passing Yards in a season')
+plt.title('Total Passing Yds v. Total Pass Attempts')
+plt.savefig('images/AttvYds.jpg')
 plt.show()
+plt.close()
+
+# # Set up the matplotlib figure
+# g=sns.FacetGrid(passdf, col='year',col_wrap=5,height=1.75)
+# g.map(sns.histplot,'Y/G',bins=10)
+# for ax in g.axes.flat:
+#     ax.axvline(x=200,alpha=0.5,ls='--',c='r')
+#
+# g.set_axis_labels('Avg. Yds/Game','Count')
+# plt.show()
 
 # track Yd/Gm average across 20 years, as well as 75th and 25th percentile curves
 # intialize lists for plotting
@@ -90,5 +112,4 @@ plt.ylabel('Total Fantasy Points per Game')
 plt.title('QB Fantasy Points per game [Min 50 Att and Min 10 games]')
 plt.legend(loc='best')
 plt.savefig('images/QBpoints.jpg')
-plt.show()
 plt.close()
