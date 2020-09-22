@@ -27,11 +27,10 @@ Several QB's have entered and left the league without throwing a single pass, or
 <img src="https://github.com/nasriv/NFLFantasyAnalysis/blob/master/images/PassAttempt.jpg">
 
 The more pass attempts there are, the more yards there should be, so again as expected there will be a high correlation between passing yards and attempts, again shown below.
+
 <img src="https://github.com/nasriv/NFLFantasyAnalysis/blob/master/images/AttvYds.jpg">
 
-Now taking our dataset and applying the traditional fantasy scoring system for QBs, we can generate a distribution of points a QB should be expected to score and thus help guide an NFL fantasy player. 
-
-<img src="https://github.com/nasriv/NFLFantasyAnalysis/blob/master/images/QBpoints.jpg">
+Now taking our dataset and applying the traditional fantasy scoring system for QBs, we can generate a plot which will define the general QB fantasy point per game trend over the past 20 years and also give a hopeful fantasy player an average point baseline for what a QB will be expected to score per game. This is an important metric as it can help guide the player's drafting strategy and how to decide how much a QB is actually worth on their team. 
 
 The standard fantasy scoring system for QBs is as follows:
 * 1pt for every 25 passing yards
@@ -40,6 +39,8 @@ The standard fantasy scoring system for QBs is as follows:
 * 6pts for every running TD
 * 1pt for every 10 rushing yards
 
-Using the scoring rubric above and applying the scoring system to the starting quarterbacks over the past 20 years yields the chart below (minimum 50 passing attempts and minimum 10 games played). The chart shows the average points a QB scores per game has steadily increased over the years. This is a reflection of the NFL's transition from a run heavy into a pass heavy league. More QBs are attempting more throws per game which has equated to a higher correlation of touchdowns scored and overall pass yards. Therefore, if you plan on drafting a QB in this year's league, you can hopefully expect them to score about 15 pts/game (which has been the rough average over the past 5 years).
+<img src="https://github.com/nasriv/NFLFantasyAnalysis/blob/master/images/QBpoints.jpg">
+
+The chart shows the average points a QB scores per game has steadily increased over the years. This is again a reflection of the NFL's transition from a run heavy into a pass heavy league. More QBs are attempting more throws per game which has equated to a higher correlation of touchdowns scored and overall pass yards. Therefore, if you plan on drafting a QB in this year's league, you can hopefully expect them to score about 15 pts/game (which has been the rough average over the past 5 years).
 
 
