@@ -33,4 +33,5 @@ The standard fantasy scoring system for QBs is as follows:
 
 Using the scoring rubric above and applying the scoring system to the starting quarterbacks over the past 20 years yields the chart below (minimum 50 passing attempts and minimum 10 games played). The chart shows the average points a QB scores per game has steadily increased over the years. This is a reflection of the NFL's transition from a run heavy into a pass heavy league. More QBs are attempting more throws per game which has equated to a higher correlation of touchdowns scored and overall pass yards. Therefore, if you plan on drafting a QB in this year's league, you can hopefully expect them to score about 15 pts/game (which has been the rough average over the past 5 years).
 
-![QB](https://github.com/nasriv/NFLFantasyAnalysis/blob/master/images/QBpoints.jpg | width=100)
+![](https://github.com/nasriv/NFLFantasyAnalysis/blob/master/images/QBpoints.jpg | width=100)
+<img src="https://github.com/nasriv/NFLFantasyAnalysis/blob/master/images/QBpoints.jpg" width="100">
