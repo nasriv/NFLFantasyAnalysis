@@ -48,10 +48,10 @@ download(start_yr,end_yr,'passing')
 # clean data by removing values which skew data set
 passdf = pd.read_csv('data/master_passing.csv')
 
-# -- remove values for pass attempts less than 10 to remove
+# -- remove values for pass attempts less than 50 to remove
 passdf = passdf[passdf['Att'] > 50]
 
-# -- remove values for games played less than 1
+# -- remove values for games played less than 10
 passdf = passdf[passdf['G'] >= 10]
 
 # compute fantasy points based on ESPN standard scoring
@@ -89,4 +89,6 @@ plt.xlabel('Year')
 plt.ylabel('Total Fantasy Points per Game')
 plt.title('QB Fantasy Points per game [Min 50 Att and Min 10 games]')
 plt.legend(loc='best')
+plt.savefig('images/QBpoints.jpg')
 plt.show()
+plt.close()
