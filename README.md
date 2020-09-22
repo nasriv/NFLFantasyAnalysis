@@ -7,10 +7,9 @@ This idea got me excited to develop a personal database of NFL statistics in ord
 ## Data Pipeline ##
 The formal steps I took to building this data pipeline is listed below:
 1. Define html websites which have structured/semi-structured data
-2. Build Python functions to loop through html websites based on a user defined range of playing years/seasons
-4. Clean and tranform data as needed
+2. Build Python functions to loop through html websites based on a user defined range of playing years/seasons as well as clean and transform data as needed
 3. Develop a "storage" function to lay the groundwork on how to compile the information in a csv format which is easy enough to later on build into a master database (SQL, etc).
-5. Run data analytic studies to answer all my burning questions
+4. Run data analytic studies to answer all my burning questions
 
 ![data pipeline image](https://github.com/nasriv/NFLFantasyAnalysis/blob/master/images/Database_flow.png "Data Pipeline")
 
@@ -19,3 +18,10 @@ The formal steps I took to building this data pipeline is listed below:
 - [ ] Compile RB Rushing Database
   - [ ] Sort by player and fill in position where missing information exists
   - [ ] Root out players who aren't RBs
+
+# Analytics #
+
+## How has QB fantasy value 
+
+
+![QB](https://github.com/nasriv/NFLFantasyAnalysis/blob/master/images/QBpoints.jpg "QB Fantasy Points")
